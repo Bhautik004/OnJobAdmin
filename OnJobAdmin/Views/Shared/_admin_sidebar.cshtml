@@ -1,0 +1,181 @@
+﻿<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="~/Content/assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+        </div>
+
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li id="dashboard" class="treeview">
+                <a href="/DashBoard/Index/">
+                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+
+                </a>
+
+            </li>
+        </ul>
+
+        <ul class="sidebar-menu">
+            <li id="admin" class="treeview">
+                <a href="#">
+                    <i class="fa fa-user"></i> <span>Admin</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li id=""><a href="/AdminProfile/index"><i class="fa fa-circle-o"></i>Admin Profile</a></li>
+                    <li id=""><a href="/AdminProfile/ChangePassword"><i class="fa fa-circle-o"></i>Change Password</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="sidebar-menu">
+            <li id="users" class="treeview">
+                <a href="#">
+                    <i class="fa fa-users"></i> <span>Users</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li id=""><a href="/User/index"><i class="fa fa-circle-o"></i>Users List</a></li>
+                    <li id="user_add"><a href="/User/AddUser"><i class="fa fa-circle-o"></i>Add New Users</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="sidebar-menu">
+            <li id="employer" class="treeview">
+                <a href="#">
+                    <i class="fa fa-user-circle"></i> <span>Company</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li id=""><a href="/Company/index"><i class="fa fa-circle-o"></i>Company List</a></li>
+                    <li id=""><a href="/Company/AddCompany"><i class="fa fa-circle-o"></i>Add New Company</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul class="sidebar-menu">
+            <li id="job" class="treeview">
+                <a href="#">
+                    <i class="fa fa-file-text"></i> <span>Jobs Posting</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li id=""><a href="#"><i class="fa fa-circle-o"></i>View Jobs</a></li>
+                    <li id=""><a href="#"><i class="fa fa-circle-o"></i>Add New Job</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="sidebar-menu">
+            <li id="contact" class="treeview">
+                <a href="#">
+                    <i class="fa fa-envelope"></i> <span>Contact Queries</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li id=""><a href="#"><i class="fa fa-circle-o"></i>View Queries</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+        <ul class="sidebar-menu">
+            <li class="header">JOB ATTRIBUTES</li>
+            <li id=""><a href="/JobAttribute_Category/index"><i class="fa fa-list-alt"></i>Category</a></li>
+            <li id=""><a href="/JobAttribute_Education/index"><i class="fa fa-book"></i>Education</a></li>
+            <li id=""><a href="/JobAttribute_Employment/Index"><i class="fa fa-user-circle-o"></i>Employment Type</a></li>
+            <li id=""><a href="/JobAttribute_Language/index"><i class="fa fa-language"></i>Language Type</a></li>
+            <li id=""><a href="#"><i class="fa fa-users"></i>Number Of Employee</a></li>
+            <li id=""><a href="#"><i class="fa fa-sitemap"></i>Organization Type</a></li>
+            <li id=""><a href="#"><i class="fa fa-plus-square-o"></i>Position Avaliable</a></li>
+            <ul class="sidebar-menu">
+                <li id="location" class="treeview">
+                    <a href="#">
+                        <i class="fa fa-map-marker "></i> <span>Manage Locations</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="#"><i class="fa fa-circle-o"></i>state</a></li>
+                        <li class=""><a href="#"><i class="fa fa-circle-o"></i>city</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="sidebar-menu">
+                <li id="industry" class="treeview">
+                    <a href="#">
+                        <i class="fa fa-industry "></i> <span>Industry</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class=""><a href="#"><i class="fa fa-industry"></i>Industry</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </ul>
+    </section>
+   @* <input type="hidden" id="selectedTab" name="selectedTab" value="@ViewBag.SelectedTab" />*@
+    <!-- /.sidebar -->
+</aside>
+
+@*<script>
+
+
+        debugger;
+        var url = window.location.href;
+        var activePage = url;
+        $('.sidebar-menu li a').click(function () {
+            var inputVal = document.getElementById("selectedTab").value;
+            switch (parseInt(inputVal)) {
+                case 1:
+                    $("#dashboard").addClass("active");
+                    break;
+                case 2:
+                    $("admin").addClass("active");
+                    break;
+                case 2:
+                    day = "Tuesday";
+                    break;
+                case 3:
+                    day = "Wednesday";
+                    break;
+                case 4:
+                    day = "Thursday";
+                    break;
+                case 5:
+                    day = "Friday";
+                    break;
+                case 6:
+                    day = "Saturday";
+            }
+           
+                $(this).closest("li").addClass("active");
+           
+        });
+
+   
+</script>*@
+
+
